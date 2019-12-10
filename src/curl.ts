@@ -21,7 +21,10 @@ interface CurlOptions {
  * @param address The address to send the curl request to.
  * @param options Optional params that can be sent with the request
  */
-export default async (address: string, { mode = 'GET', headers = {}, user, data, flags = [] }: CurlOptions) => {
+export default async (
+	address: string,
+	{ mode = 'GET', headers = {}, user, data, flags = [] }: CurlOptions
+): Promise<string> => {
 	const reqHeaders = Object.keys(headers).reduce(
 		(acc: string, curr: string) => (acc += `-H "${curr}: ${headers[curr]}"`),
 		''
@@ -30,7 +33,7 @@ export default async (address: string, { mode = 'GET', headers = {}, user, data,
 	// Build the curl string.
 	let curlString = `curl -X ${mode} ${reqHeaders} ${data ? '-D ' + JSON.stringify(data) : ''} ${user
 		? '--user' + user.user + ':' + user.password
-		: ''} ${flags.map((flag: string) => '--' + flag).join(' ')} ${address}`;
+		: ''} ${flags.join(' ')} ${address}`;
 
 	// Execute the curl, and
 	return new Promise((resolve, reject) => {
