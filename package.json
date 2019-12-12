@@ -1,7 +1,7 @@
 {
 	"name": "@digibear/curl",
 	"version": "1.0.0",
-	"main": "./src/curl.js",
+	"main": "./dist/index.js",
 	"scripts": {},
 	"keywords": [ "Curl", "Typescript," ],
 	"author": "Lemuel Canady, Jr",
@@ -13,5 +13,5 @@
 	"devDependencies": {
 		"@types/node": "^12.12.16"
 	},
-	"description": ""
+	"description": "A small curl utility written in typescript."
 }
