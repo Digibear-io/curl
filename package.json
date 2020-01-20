@@ -3,7 +3,10 @@
 	"version": "1.0.0",
 	"main": "./dist/index.js",
 	"scripts": {},
-	"keywords": [ "Curl", "Typescript," ],
+	"keywords": [
+		"Curl",
+		"Typescript,"
+	],
 	"author": "Lemuel Canady, Jr",
 	"license": "MIT",
 	"dependencies": {
