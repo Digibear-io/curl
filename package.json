@@ -9,12 +9,11 @@
 	],
 	"author": "Lemuel Canady, Jr",
 	"license": "MIT",
-	"dependencies": {
-		"ts-node": "^8.5.4",
-		"typescript": "^3.7.3"
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"@types/node": "^12.12.16"
+		"@types/node": "^12.12.25",
+		"ts-node": "^8.6.2",
+		"typescript": "^3.7.5"
 	},
 	"description": "A small curl utility written in typescript."
 }
