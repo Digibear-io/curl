@@ -1,19 +1,23 @@
 {
-	"name": "@digibear/curl",
-	"version": "1.0.0",
-	"main": "./dist/index.js",
-	"scripts": {},
-	"keywords": [
-		"Curl",
-		"Typescript,"
-	],
-	"author": "Lemuel Canady, Jr",
-	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
-		"@types/node": "^12.12.25",
-		"ts-node": "^8.6.2",
-		"typescript": "^3.7.5"
-	},
-	"description": "A small curl utility written in typescript."
+  "name": "@digibear/curl",
+  "version": "1.0.0",
+  "main": "./dist/curl.js",
+  "scripts": {
+    "build": "npx tsc -p ./src/tsconfig.json"
+  },
+  "keywords": [
+    "Curl",
+    "Typescript,"
+  ],
+  "author": "Lemuel Canady, Jr",
+  "license": "MIT",
+  "repository": "https://github.com/digibear-io/curl.git",
+  "homepage": "https://github.com/Digibear-io/curl/blob/master/README.md",
+  "devDependencies": {
+    "@types/node": "^12.12.25",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "description": "A small curl utility written in typescript.",
+  "dependencies": {}
 }
