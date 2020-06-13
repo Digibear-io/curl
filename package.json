@@ -1,7 +1,7 @@
 {
   "name": "@digibear/curl",
   "version": "1.1.0",
-  "main": "index.js",
+  "main": "dist/curl.js",
   "scripts": {
     "build": "npx tsc -p ./src/tsconfig.json"
   },
