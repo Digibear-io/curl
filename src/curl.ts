@@ -33,7 +33,7 @@ export async function curl(
   // Build the curl string.
   let curlString = `curl -X ${mode} ${reqHeaders} ${
     data ? "-d " + JSON.stringify(data) : ""
-  } ${user ? "--user " + user.user + ":" + user.password : ""} ${flags.join(
+  } ${user ? "--user '" + user.user + ':' + user.password +'"': ""} ${flags.join(
     " "
   )} ${address}`;
 
