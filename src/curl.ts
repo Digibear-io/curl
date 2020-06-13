@@ -1,4 +1,4 @@
-import { exec } from "child_process";
+import { exec } from  "child_process";
 
 interface CurlOptions {
   mode?: "GET" | "PUT" | "PUSH" | "DELETE" | "POST";
@@ -41,7 +41,7 @@ export async function curl(
   return new Promise((resolve, reject) => {
     exec(curlString, (err, stdout) => {
       if (err) reject(err);
-      return resolve(stdout);
+      resolve(stdout);
     });
   });
 }

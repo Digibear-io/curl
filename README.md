@@ -7,16 +7,12 @@ This was originally written for a series of shell scripts I wrote using node.
 ### `curl(address, options)`
 
 ```JS
-// ts-node
-import {curl} from "curl";
-
-// Node
-const {curl} = require("curl/dist/");
+const {curl} = require("@digibear/curl");
 
 (async () => {
   const results = await curl("http://www.example.com", {
     mode: "GET",
-    header: {
+    headers: {
       "api-key": "xxxxx-xxxxx-xxxxx",
     },
     flags: ["headers"]

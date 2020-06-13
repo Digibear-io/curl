@@ -15,7 +15,7 @@ async function curl(address, { mode = "GET", headers = {}, user, data, flags = [
         child_process_1.exec(curlString, (err, stdout) => {
             if (err)
                 reject(err);
-            return resolve(stdout);
+            resolve(stdout);
         });
     });
 }

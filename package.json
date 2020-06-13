@@ -1,13 +1,17 @@
 {
   "name": "@digibear/curl",
   "version": "1.0.0",
-  "main": "./dist/curl.js",
+  "main": "index.js",
   "scripts": {
     "build": "npx tsc -p ./src/tsconfig.json"
   },
   "keywords": [
     "Curl",
     "Typescript,"
+  ],
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
   ],
   "author": "Lemuel Canady, Jr",
   "license": "MIT",

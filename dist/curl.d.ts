@@ -20,4 +20,3 @@ interface CurlOptions {
  */
 export declare function curl(address: string, { mode, headers, user, data, flags }: CurlOptions): Promise<string>;
 export {};
-//# sourceMappingURL=curl.d.ts.map
