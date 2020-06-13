@@ -26,7 +26,7 @@ export async function curl(
   { mode = "GET", headers = {}, user, data, flags = [] }: CurlOptions
 ): Promise<string> {
   const reqHeaders = Object.keys(headers).reduce(
-    (acc: string, curr: string) => (acc += `-H "${curr}: ${headers[curr]}"`),
+    (acc: string, curr: string) => (acc += ` -H "${curr}: ${headers[curr]}"`),
     ""
   );
 
